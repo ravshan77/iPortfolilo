@@ -219,7 +219,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg1.jpg") center;
+  background: url("../img/my_photos/photo_2022-01-10_02-20-44.jpg") center;
   background-size: cover;
   position: relative;
   object-fit: cover;
@@ -273,6 +273,19 @@ h6 {
   border-bottom: 3px solid #149ddd;
 }
 
+@media (max-width: 1200px) {
+  #hero .hero-container h1 {
+    position: absolute;
+    bottom:100px;
+    left:25%;
+  }
+
+  #hero .hero-container p {
+    position: absolute;
+    bottom:0px;
+    left:25%;
+  }
+}
 
 
 @media (min-width: 1024px) {
@@ -281,27 +294,22 @@ h6 {
   }
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   #hero .hero-container {
-    top:0;
+    bottom:0;
     left:0;
   }
 
-} */
+}
 
 @media (max-width: 768px) {
-  /* #hero .hero-container {
-    top:0;
-    left:0;
-  } */
   #hero h1 {
     font-size: 28px;
-    line-height: 36px;
+    line-height: 32px;
   }
-  #hero h2 {
+  #hero p {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
   }
 }
 
